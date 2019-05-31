@@ -10,26 +10,31 @@ export function ageCalc(dob) {
 }
 
 export function getMercuryAge(userAge) {
-  let mercuryAge = userAge * .24;
+  let mercuryCalc = (userAge * .24);
+  let mercuryAge = Math.round(mercuryCalc * 10 ) / 10;
   return mercuryAge;
 }
 
 export function getVenusAge(userAge) {
-  let venusAge = userAge * .62;
+  let venusCalc = userAge * .62;
+  let venusAge = Math.round(venusCalc * 10 ) / 10;
   return venusAge;
 }
 
 export function getMarsAge(userAge) {
-  let marsAge = userAge * 1.88;
+  let marsCalc = userAge * 1.88;
+  let marsAge = Math.round(marsCalc * 10 ) / 10;
   return marsAge;
 }
 
 export function getJupiterAge(userAge) {
-  let jupiterAge = userAge * 11.86;
+  let jupiterCalc = userAge * 11.86;
+  let jupiterAge = Math.round(jupiterCalc * 10 ) / 10;
   return jupiterAge;
 }
 
 export function timeLeftMercury(mercuryAge) {
-  let mercuryYearsLeft = 18.888 - mercuryAge;
+  let yearsLeftCalc = 18.888 - mercuryAge;
+  let mercuryYearsLeft = Math.round(yearsLeftCalc * 10 ) / 10;
   return mercuryYearsLeft
 }
