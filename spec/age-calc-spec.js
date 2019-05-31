@@ -1,4 +1,4 @@
-import { ageCalc, getMercuryAge, getVenusAge, getMarsAge, getJupiterAge, timeLeftMercury } from './../src/age-calc.js';
+import { ageCalc, getMercuryAge, getVenusAge, getMarsAge, getJupiterAge, timeLeftMercury, timeLeftVenus, timeLeftMars, timeLeftJupiter } from './../src/age-calc.js';
 
 describe('ageCalc', function() {
 
@@ -43,7 +43,31 @@ describe('getJupiterAge', function() {
 describe('timeLeftMercury', function() {
 
   it('should return how many Mercury years user has left to live', function() {
-    let mercuryAge = 10.5;
-    expect(timeLeftMercury(mercuryAge)).toEqual(8.4);
+    let mercuryAge = 10;
+    expect(timeLeftMercury(mercuryAge)).toEqual(8.9);
+  });
+});
+
+describe('timeLeftVenus', function() {
+
+  it('should return how many Venus years user has left to live', function() {
+    let venusAge = 27.3;
+    expect(timeLeftVenus(venusAge)).toEqual(21.5);
+  });
+});
+
+describe('timeLeftMars', function() {
+
+  it('should return how many Mars years user has left to live', function() {
+    let marsAge = 82.7;
+    expect(timeLeftMars(marsAge)).toEqual(65.3);
+  });
+});
+
+describe('timeLeftJupiter', function() {
+
+  it('should return how many Jupiter years user has left to live', function() {
+    let jupiterAge = 521.8;
+    expect(timeLeftJupiter(jupiterAge)).toEqual(411.6);
   });
 });

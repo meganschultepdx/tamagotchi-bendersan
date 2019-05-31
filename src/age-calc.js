@@ -34,7 +34,29 @@ export function getJupiterAge(userAge) {
 }
 
 export function timeLeftMercury(mercuryAge) {
-  let yearsLeftCalc = 18.888 - mercuryAge;
+  const mercuryDeathAge = 18.9;
+  let yearsLeftCalc = mercuryDeathAge - mercuryAge;
   let mercuryYearsLeft = Math.round(yearsLeftCalc * 10 ) / 10;
-  return mercuryYearsLeft
+  return mercuryYearsLeft;
+}
+
+export function timeLeftVenus(venusAge) {
+  const venusDeathAge = 48.8;
+  let yearsLeftCalc = venusDeathAge - venusAge;
+  let venusYearsLeft = Math.round(yearsLeftCalc * 10 ) / 10;
+  return venusYearsLeft;
+}
+
+export function timeLeftMars(marsAge) {
+  const marsDeathAge = 148;
+  let yearsLeftCalc = marsDeathAge - marsAge;
+  let marsYearsLeft = Math.round(yearsLeftCalc * 10 ) / 10;
+  return marsYearsLeft;
+}
+
+export function timeLeftJupiter(jupiterAge) {
+  const jupiterDeathAge = 933.4;
+  let yearsLeftCalc = jupiterDeathAge - jupiterAge;
+  let jupiterYearsLeft = Math.round(yearsLeftCalc * 10 ) / 10;
+  return jupiterYearsLeft;
 }
