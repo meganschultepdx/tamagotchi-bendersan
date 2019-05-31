@@ -7,8 +7,8 @@ import './styles.css';
 $(document).ready(function() {
   $('#dob-form').submit(function(event) {
     event.preventDefault();
-    let dob = new Date(year, month, day);
-    let weekday = weekdayCalc(myDate);
+    let dob = new Date(dob);
+    let userAge = userAge(dob);
       $('#solution').text(` ${weekday}`);
   });
 });
