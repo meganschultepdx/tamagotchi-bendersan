@@ -8,3 +8,8 @@ export function ageCalc(dob) {
   }
   return userAge;
 }
+
+export function getMercuryAge(userAge) {
+  let mercuryAge = userAge * .24;
+  return mercuryAge;
+}
