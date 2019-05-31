@@ -16,11 +16,13 @@ module.exports = function(config) {
       'spec/*spec.js': ['webpack', 'sourcemap']
     },
     plugins: [
+      'karma-sourcemap-loader',
       'karma-jquery',
       'karma-webpack',
       'karma-jasmine',
       'karma-chrome-launcher',
       'karma-jasmine-html-reporter'
+
     ],
     reporters: ['progress', 'kjhtml'],
     port: 9876,
