@@ -1,4 +1,4 @@
-import { ageCalc, getMercuryAge, getVenusAge, getMarsAge, getJupiterAge } from './../src/age-calc.js';
+import { ageCalc, getMercuryAge, getVenusAge, getMarsAge, getJupiterAge, timeLeftMercury } from './../src/age-calc.js';
 
 describe('ageCalc', function() {
 
@@ -37,5 +37,13 @@ describe('getJupiterAge', function() {
   it('should return age of user on Jupiter', function() {
     let userAge = 44;
     expect(getJupiterAge(userAge)).toEqual(521.8399999999999);
+  });
+});
+
+describe('timeLeftMercury', function() {
+
+  it('should return how many Mercury years user has left to live', function() {
+    let mercuryAge = 10.5;
+    expect(timeLeftMercury(mercuryAge)).toEqual(8.388000000000002);
   });
 });

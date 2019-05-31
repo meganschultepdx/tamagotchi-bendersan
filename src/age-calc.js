@@ -28,3 +28,8 @@ export function getJupiterAge(userAge) {
   let jupiterAge = userAge * 11.86;
   return jupiterAge;
 }
+
+export function timeLeftMercury(mercuryAge) {
+  let mercuryYearsLeft = 18.888 - mercuryAge;
+  return mercuryYearsLeft
+}
