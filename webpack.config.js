@@ -1,6 +1,7 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -12,29 +13,32 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
-
-plugins: [
-  new UglifyJsPlugin({ sourceMap: true }),
-  new CleanWebpackPlugin(['dist']),
-  new HtmlWebpackPlugin({
-    title: 'Ping Pong',
-    template: './src/index.html',
-    inject: 'body'
-  })
-],
-module: {
-  rules: [
-    {
-      test: /\.css$/,
-      use: [
-        'style-loader',
-        'css-loader'
-      ]
-    },
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: "eslint-loader"
-    }
-  ]
-    };
+  plugins: [
+    new UglifyJsPlugin({ sourceMap: true }),
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'solar-age-calculator',
+      template: './src/index.html',
+      inject: 'body'
+    })
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.js$/,
+        exclude: [
+                /node_modules/,
+                /spec/
+              ],
+        loader: "eslint-loader"
+      },
+    ]
+  }
+};
