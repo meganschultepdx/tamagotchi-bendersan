@@ -1,4 +1,4 @@
-import { ageCalc, getMercuryAge, getVenusAge } from './../src/age-calc.js';
+import { ageCalc, getMercuryAge, getVenusAge, getMarsAge, getJupiterAge } from './../src/age-calc.js';
 
 describe('ageCalc', function() {
 
@@ -21,5 +21,21 @@ describe('getVenusAge', function() {
   it('should return age of user on Venus', function() {
     let userAge = 44;
     expect(getVenusAge(userAge)).toEqual(27.28);
+  });
+});
+
+describe('getMarsAge', function() {
+
+  it('should return age of user on Mars', function() {
+    let userAge = 44;
+    expect(getMarsAge(userAge)).toEqual(82.72);
+  });
+});
+
+describe('getJupiterAge', function() {
+
+  it('should return age of user on Jupiter', function() {
+    let userAge = 44;
+    expect(getJupiterAge(userAge)).toEqual(521.8399999999999);
   });
 });
