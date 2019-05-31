@@ -6,7 +6,7 @@
 
   ## Description
 
-  This web application will first take in a user's birthday as a date object, it will first calculate their Earth age, then it will calculate their age on other planets (Mercury, Venus, Mars, Jupiter). Additionally, it will collect basic info to determine their Earth life expectancy and it will calculate how many years they have left to live on the previously mentioned planets.
+  This web application will first take in a user's birthday as a date object, it will first calculate their Earth age, then it will calculate their age on other planets (Mercury, Venus, Mars, Jupiter). Additionally, it will calculate their time left to live on each of the above planets based on the average life expectancy of people living the the US.
 
   ## Setup/Installation Requirements
 
@@ -22,12 +22,10 @@
   |Objectives|example input|example output|
   |-|-|-|
   |User is able to enter birthday.| Dec 12, 1974 | 1974,12,12 |
-  |Program calculates user Earth age. | 1974, 12, 12 | 44y 5m 19 d |
-  |Program converts Earth age to Earth age in days. |  44y 5m 19d | 16229 Earth days |
-  |Program calculates user age on Mercury in days and converts back to years. | 16229 Earth days  | 10.67 Mercury years |
-  |Program calculates user age on other planets in days and converts back to years.| 16229 Earth days | 27.57 Venus years |
-  |Program determines user's Earth life expectancy.| US, male | 76.1 Earth years |
-  |Program will calculate years left to live on other planets. |76.1 Earth years | 7.59 Mercury years left to live|
+  |Program calculates user Earth age. | 1974, 12, 12 | 44y |
+  |Program converts Earth age to Mercury age. |  44 Earth years | 10.6 |
+  |Program calculates user age on other planets (venus, mars, jupiter )| 44 Earth years | 27.3 Venus years |
+  |Program will calculate years left to live on other planets. |27.3 Venus years old | 21.5 Venus years yet to live |
 
   ## Known Bugs
 
@@ -47,7 +45,7 @@
   * JQuery
   * Jasmine
   * Karma
-  * Bootstrap 
+  * Bootstrap
 
   ### License
 
