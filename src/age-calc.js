@@ -13,3 +13,18 @@ export function getMercuryAge(userAge) {
   let mercuryAge = userAge * .24;
   return mercuryAge;
 }
+
+export function getVenusAge(userAge) {
+  let venusAge = userAge * .62;
+  return venusAge;
+}
+
+export function getMarsAge(userAge) {
+  let marsAge = userAge * 1.88;
+  return marsAge;
+}
+
+export function getJupiterAge(userAge) {
+  let jupiterAge = userAge * 11.86;
+  return jupiterAge;
+}
