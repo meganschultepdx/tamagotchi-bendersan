@@ -1,4 +1,4 @@
-import { ageCalc getMercuryAge } from './../src/age-calc.js';
+import { ageCalc, getMercuryAge } from './../src/age-calc.js';
 
 describe('ageCalc', function() {
 
@@ -12,4 +12,6 @@ describe('getMercuryAge', function() {
 
   it('should return age of user on Mercury', function() {
     let userAge = 44;
-    expect(ageCalc(userAge)).toEqual(10.56);
+    expect(getMercuryAge(userAge)).toEqual(10.559999999999999);
+  });
+});
