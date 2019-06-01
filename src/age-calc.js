@@ -44,7 +44,12 @@ export function timeLeftVenus(venusAge) {
   const venusDeathAge = 48.8;
   let yearsLeftCalc = venusDeathAge - venusAge;
   let venusYearsLeft = Math.round(yearsLeftCalc * 10 ) / 10;
-  return venusYearsLeft;
+    if (venusYearsLeft < 0) {
+    let deadForYears = Math.abs(venusYearsLeft);
+    return deadForYears = "Uh oh, looks like you have been dead on Venus for " + deadForYears + " years. Sorry about that!!!";
+  } else {
+    return venusYearsLeft = venusYearsLeft + " years left. Do not waste them!";
+  }
 }
 
 export function timeLeftMars(marsAge) {

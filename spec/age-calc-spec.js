@@ -52,7 +52,9 @@ describe('timeLeftVenus', function() {
 
   it('should return how many Venus years user has left to live', function() {
     let venusAge = 27.3;
-    expect(timeLeftVenus(venusAge)).toEqual(21.5);
+    let venusDeadAge = 70;
+    expect(timeLeftVenus(venusAge)).toEqual("21.5 years left. Do not waste them!");
+    expect(timeLeftVenus(venusDeadAge)).toEqual("Uh oh, looks like you have been dead on Venus for 21.2 years. Sorry about that!!!")
   });
 });
 
