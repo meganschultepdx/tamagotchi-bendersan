@@ -17,20 +17,22 @@ $(document).ready(function() {
     let venusYearsLeft = timeLeftVenus(venusAge);
     let marsYearsLeft = timeLeftMars(marsAge);
     let jupiterYearsLeft = timeLeftJupiter(jupiterAge);
-    $('#solution').text(`Hello Earthling from the United States!
-      Thank you for inputting your date of birth; we have calculated your age to be:  ${userAge}
-      But you already know that! What you might not know is your age on these following planets:
-        Mercury ----> ${mercuryAge}
-        Venus ----> ${venusAge}
-        Mars ----> ${marsAge}
-        Jupiter ----> ${jupiterAge}
-      Also, we have calculated that based on you being an Earthling from the United States the average time you have left to live on these planets is as follows:
-        Mercury ----> ${mercuryYearsLeft}
-        Venus ----> ${venusYearsLeft}
-        Mars ----> ${marsYearsLeft}
-        Jupiter ----> ${jupiterYearsLeft}
-        
-      Live long and prosper Earthling!`);
+    $('#solution').html(`<br><p>Hello Earthling from the United States!<br>
+      <p>Thank you for inputting your date of birth;</p>
+      <p>We have calculated your age to be:   ${userAge} Earth years</p>
+      <p>But you already knew that!</p>
+      <p>What you might not know is your age on these following planets:</p>
+        <p>Mercury ----> ${mercuryAge} years old<br>
+        Venus ----> ${venusAge} years old<br>
+        Mars ----> ${marsAge} years old<br>
+        Jupiter ----> ${jupiterAge} years old</p>
+      <p>Also, we have calculated that based on you being an Earthling from the United States, the average time you</p>
+     <p>have left to live on these planets is as follows:</p>
+        <p>Mercury ----> ${mercuryYearsLeft} years left. Better make it count!<br>
+        Venus ----> ${venusYearsLeft} years left. Don't waste them!<br>
+        Mars ----> ${marsYearsLeft} years left. You got time man, might as well enjoy today!<br>
+        Jupiter ----> ${jupiterYearsLeft} years left. Dude, time to binge on some tv series or sleep for a few days, you got plenty of time to spare!</p><br>
+      <p>Live long and prosper Earthling!</p>`);
 
   });
 });
