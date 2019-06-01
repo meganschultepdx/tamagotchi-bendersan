@@ -29,10 +29,10 @@ $(document).ready(function() {
         Jupiter ----> ${jupiterAge} years old</p>
       <p>Also, we have calculated that based on you being an Earthling from the United States, the average time you</p>
      <p>have left to live on these planets is as follows:</p>
-        <p>Mercury ----> ${mercuryYearsLeft} years left. Better make it count!<br>
+        <p>Mercury ----> ${mercuryYearsLeft}<br>
         Venus ----> ${venusYearsLeft}<br>
-        Mars ----> ${marsYearsLeft} years left. You got time man, might as well enjoy today!<br>
-        Jupiter ----> ${jupiterYearsLeft} years left. Dude, time to binge on some tv series or sleep for a few days, you got plenty of time to spare!</p><br>
+        Mars ----> ${marsYearsLeft}<br>
+        Jupiter ----> ${jupiterYearsLeft}</p><br>
       <p>Live long and prosper Earthling!</p>`);
 
   });

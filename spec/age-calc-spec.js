@@ -44,7 +44,9 @@ describe('timeLeftMercury', function() {
 
   it('should return how many Mercury years user has left to live', function() {
     let mercuryAge = 10;
-    expect(timeLeftMercury(mercuryAge)).toEqual(8.9);
+    let mercuryDeadAge = 30;
+    expect(timeLeftMercury(mercuryAge)).toEqual("8.9 years left. Better make it count!");
+    expect(timeLeftMercury(mercuryDeadAge)).toEqual("Uh oh, looks like you have been dead on Mercury for 11.1 years. Sorry about that!!!")
   });
 });
 
@@ -62,7 +64,9 @@ describe('timeLeftMars', function() {
 
   it('should return how many Mars years user has left to live', function() {
     let marsAge = 82.7;
-    expect(timeLeftMars(marsAge)).toEqual(65.3);
+    let marsDeadAge = 200;
+    expect(timeLeftMars(marsAge)).toEqual("65.3 years left. You got time man, might as well take it easy today!");
+    expect(timeLeftMars(marsDeadAge)).toEqual("Uh oh, looks like you have been dead on Mars for 52 years. Sorry about that!!!")
   });
 });
 
@@ -70,6 +74,8 @@ describe('timeLeftJupiter', function() {
 
   it('should return how many Jupiter years user has left to live', function() {
     let jupiterAge = 521.8;
-    expect(timeLeftJupiter(jupiterAge)).toEqual(411.6);
+    let jupiterDeadAge = 1200;
+    expect(timeLeftJupiter(jupiterAge)).toEqual("411.6 years left. Dude, time to binge on some tv series or sleep for a few days, you got plenty of time to spare!");
+    expect(timeLeftJupiter(jupiterDeadAge)).toEqual("Uh oh, looks like you have been dead on Jupiter for 266.6 years. Sorry about that!!!")
   });
 });
