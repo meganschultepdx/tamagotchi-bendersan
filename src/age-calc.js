@@ -65,6 +65,7 @@ export function timeLeftMars(marsAge) {
   }
 }
 
+//933.4 is the life expectancy of Jupiter
 export function timeLeftJupiter(jupiterAge) {
   let jupiterYearsLeft = Math.round((933.4 - jupiterAge) * 10 ) / 10;
 
