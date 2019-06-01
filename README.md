@@ -24,7 +24,7 @@
   |User is able to enter birthday.| Dec 12, 1974 | 1974,12,12 |
   |Program calculates user Earth age. | 1974, 12, 12 | 44y |
   |Program converts Earth age to Mercury age. |  44 Earth years | 10.6 |
-  |Program calculates user age on other planets (venus, mars, jupiter )| 44 Earth years | 27.3 Venus years |
+  |Program calculates user age on other planets (Venus, Mars, Jupiter )| 44 Earth years | 27.3 Venus years |
   |Program will calculate years left to live on other planets. |27.3 Venus years old | 21.5 Venus years yet to live |
 
   ## Known Bugs
