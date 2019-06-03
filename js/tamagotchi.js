@@ -3,8 +3,8 @@ export class Tamagotchi {
   constructor(name) {
     this.name = name;
     this.foodLevel = 10;
-    this.attentionLevel = 10;
-    this.restLevel = 10;
+    this.partyLevel = 10;
+    this.alcoholLevel = 10;
   }
   setHunger() {
     setInterval(() => {
@@ -12,20 +12,20 @@ export class Tamagotchi {
     }, 1000);
   }
 
-  setLoneliness() {
+  setBordom() {
     setInterval(() => {
-      this.attentionLevel--;
+      this.partyLevel--;
     }, 1000);
   }
 
-  setTiredness() {
+  setSobriety() {
     setInterval(() => {
-      this.restLevel--;
+      this.achoholLevel--;
     }, 1000);
   }
 
   died() {
-    if (this.foodLevel > 0 || this.attentionLevel > 0 || this.restLevel > 0) {
+    if (this.foodLevel > 0 || this.partyLevel > 0 || this.alcoholLevel > 0) {
       return false;
     } else {
       return true;
@@ -35,10 +35,10 @@ export class Tamagotchi {
   feed() {
     this.foodLevel = 10;
   }
-  playWith() {
-    this.attentionLevel = 10;
+  partyWith() {
+    this.partyLevel = 10;
   }
-  giveNap() {
-    this.restLevel = 10;
+  giveBooze() {
+    this.alcoholLevel = 10;
   }
 }
