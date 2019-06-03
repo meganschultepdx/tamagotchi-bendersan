@@ -6,7 +6,7 @@
 
   ## Description
 
-  This web application will mimic the functionality of the popular 90s/00s hand-held digi-pet. It is based off the character Bender from Futurama and it is designed to make a user fullfil Bender's needs to stay alive.
+  This web application will mimic the functionality of the popular 90s/00s hand-held digi-pet. It is based off the character Bender from Futurama and it is designed to make a user fullfil Bender's needs to stop him from killing all humans.
 
   ## Setup/Installation Requirements
 

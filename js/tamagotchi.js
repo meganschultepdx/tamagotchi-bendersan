@@ -20,11 +20,11 @@ export class Tamagotchi {
 
   setSobriety() {
     setInterval(() => {
-      this.achoholLevel--;
+      this.alcoholLevel--;
     }, 1000);
   }
 
-  died() {
+  killAllHumans() {
     if (this.foodLevel > 0 || this.partyLevel > 0 || this.alcoholLevel > 0) {
       return false;
     } else {
