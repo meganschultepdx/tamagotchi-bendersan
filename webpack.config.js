@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'hungry-bear',
+      title: 'tamagotchisan',
       template: './src/index.html',
       inject: 'body'
     })
