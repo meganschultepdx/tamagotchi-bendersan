@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="bundle.js"></script>
-    <title>Tamagotchi Bendersan</title>
-  </head>
-  <body class="container">
-    <div class="levelsDisplay">
-      <h1>Bendersan, your beloved robot friend!</h1>
-      <h2>Bender is your loving friend unless he does not get enough fast food, party time or booze! Make sure to feed, party with and give him enough alcohol or he will "Kill All Humans!"</h2>
-      <h3>You must keep Bender's levels for all three above zero!</h3>
-      <p id="foodLevel">Current fast food fullness level:  $(foodLevel) </p>
-      <p id="partyLevel">Current not bored because partying enough level: $(#partyLevel)</p>
-      <p id="alcoholLevel">Most important! Current alcohol level (Bender runs on booze, don't let him sober up!):  $(#alcoholLevel)</p>
+<head>
+  <script type="text/javascript" src="bundle.js"></script>
+  <title>Tamagotchi Bender-san</title>
+</head>
+<body class="container">
+  <div class="explanation">
+    <h1>Bender-san, your beloved robot friend!</h1>
+    <h2>Bender is your loving friend unless he does not get enough fast food, party time or booze! Make sure to feed, party with and give him enough alcohol or he will "Kill All Humans!"</h2>
+    <h3>You must keep Bender's levels for all three above zero!</h3>
+
+    <form class="title-form" action="index.html" method="post">
+      <label for="title">Give Bender-san ad extra special title (e.g. "Bender the Great"). Type in your adjective here:</label>
+      <input id="title-input" type="text">
+      <button type="submit" name="button"></button>
+    </form>
+
+    <div id="currentLevels">
+      <p id="foodLevel">Current fast food fullness level:  <span class="foodLevel"></span></p>
+      <p id="partyLevel">Current not bored because partying enough level: <span class="partyLevel"></span></p>
+      <p id="alcoholLevel">Most important! Current alcohol level (Bender runs on booze, don't let him sober up!):  <span class="boozeLevel"></span></p>
     </div>
-    <form id="action-form">
-      <div class="form-group">
+  </div>
 
-        <button id="feed" type="submit" class="btn btn-dark">Feed Bender some fast food!</button>
-        <button id="party" type="submit" class="btn btn-dark">Take Bender out to Party!</button>
-        <button id="booze" type="submit" class="btn btn-dark">Give Bender some 🍺 🍺 🍺  before he sobers up!</button>
+  <form id="action-form">
+    <div class="form-group">
 
-      </form>
-
-    <ul id="solution"></ul>
+      <button id="feed" type="button" class="btn btn-dark">Feed Bender some fast food!</button>
+      <button id="party" type="button" class="btn btn-dark">Take Bender out to Party!</button>
+      <button id="booze" type="button" class="btn btn-dark">Give Bender some 🍺 🍺 🍺  before he sobers up!</button>
+    </form>
   </body>
-</html>
+  </html>
