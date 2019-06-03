@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'solar-age-calculator',
+      title: 'hungry-bear',
       template: './src/index.html',
       inject: 'body'
     })
@@ -28,9 +28,20 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
         ]
       },
+      {
+       test: /\.(png|jpg|gif)$/i,
+       use: [
+         {
+           loader: 'url-loader',
+           options: {
+             limit: 8192
+           }
+         }
+       ]
+     },
       {
         test: /\.js$/,
         exclude: [
