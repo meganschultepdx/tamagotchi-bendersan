@@ -1,12 +1,12 @@
-# Solar Age Calculator
+# Bendersan Tamagotchi game
 
-  #### JavaScript Application that uses the Date Object, 5-31-2019
+  #### JavaScript Application that uses the setInterval and setTimeout, 6-3-2019
 
   #### By Megan Schulte
 
   ## Description
 
-  This web application will first take in a user's birthday as a date object, it will first calculate their Earth age, then it will calculate their age on other planets (Mercury, Venus, Mars, Jupiter). Additionally, it will calculate their time left to live on each of the above planets based on the average life expectancy of people living the the US.
+  This web application will mimic the functionality of the popular 90s/00s hand-held digi-pet. It is based off the character Bender from Futurama and it is designed to make a user fullfil Bender's needs to stay alive.
 
   ## Setup/Installation Requirements
 
