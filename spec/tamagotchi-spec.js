@@ -12,8 +12,8 @@ describe('Tamagotchi', function() {
     jasmine.clock().uninstall();
   });
 
-  it('should have a name and a food level, boredom level and party level of 10 when it is created', function() {
-    expect(bendersan.name).toEqual("Bendersan");
+  it('should have a title and a food level, boredom level and party level of 10 when it is created', function() {
+    expect(bendersan.title).toEqual("Bendersan");
     expect(bendersan.foodLevel).toEqual(10);
     expect(bendersan.partyLevel).toEqual(10);
     expect(bendersan.partyLevel).toEqual(10);

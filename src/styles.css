@@ -1,0 +1,49 @@
+@font-face
+{
+font-family: fr-title.ttf;
+src: url('fr-title.ttf;');
+}
+
+body {
+  background: #37383a;
+  /* background-image: url('~/img/futurama.png') */
+}
+
+h1 {
+  color: #3dbf98;
+  text-align: center;
+  font-size: 40px;
+  font-family: fr-title.ttf
+}
+
+h3 {
+  color: #19334f;
+}
+
+#levelTitle h3 {
+  color: red;
+}
+
+.title-form {
+  text-align: center;
+}
+
+#currentLevels {
+  border: 4px solid #89B6A5;
+  background: #89B6A5;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.actionButton {
+  margin: 7px;
+  background-color: black;
+  color: lightgray;
+  height: 50px;
+  width: 40%;
+  border-radius: 8px;
+}
+
+.actionButton:hover {
+  background-color: red;
+}

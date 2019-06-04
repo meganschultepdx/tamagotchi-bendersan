@@ -3,31 +3,52 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-// import img from './image.png'
+import futurama from './futurama.png'
+
 
 $(document).ready(function() {
-  $('#title-form').submit(function(event) {
+  // let tamagotchi;
+  $('form.title-form').submit(function(event) {
     event.preventDefault();
-    let title = "Bender-san the" + $('#title-input').val();
-    $('#title-form').hide();
-    $('#currentLevels').show();
-    let foodLevel = this.foodLevel;
-    let partyLevel = this.partyLevel;
-    let alcoholLEvel = this.alcoholLevel;
-    const bendersan = new Tamagotchi();
+    let title = $('#title-input').val();
+    // let yourBender = "Bender-san the " title;
+    let bendersan = new Tamagotchi(title);
+    $('.title-form').hide();
+    $('#showAfter').show();
+    // $(".name-of-pet").text(title);
+    CurrentLevels(bendersan);
 
 //for buttons
-    $('#feed').click(function() {
+    $('button#feed').click(function() {
       bendersan.feed();
-    })
-    $('#party').click(function() {
+      console.log(bendersan.foodLevel);
+    });
+    $('button#party').click(function() {
       bendersan.partyWith();
-    })
-    $('#booze').click(function() {
+      console.log(bendersan.partyLevel);
+    });
+    $('button#booze').click(function() {
       bendersan.giveAlcohol();
-    })
+      console.log(bendersan.alcoholLevel);
+    });
 
 // for display current levelsDisplay
+function CurrentLevels(bendersan) {
+    setInterval(() => {
+      $("#foodLevel").text(bendersan.foodLevel);
+      $("#partyLevel").text(bendersan.partyLevel);
+      $("#alcoholLevel").text(bendersan.alcoholLevel);
+      // if (bendersan.killAllHumans() === " Dang, Bender-san's levels have dropped too low and he has KILLED ALL HUMANS!") {
+      //   $(".buttons").hide();
+      //   $(".tama").hide();
+      //   $("form.pet-name").show();
+      //   $(".dead").text(bendersan.title + bendersan.killAllHumans())
+      //   // delete bendersan;
+      //   console.log(bendersan.food);
+      // }
+    }, 1000);
+
+  }
 
   });
 });
