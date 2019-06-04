@@ -6,7 +6,8 @@ src: url('fr-title.ttf;');
 
 body {
   background: #37383a;
-  /* background-image: url('~/img/futurama.png') */
+  background-image: url('./img/futurama.png');
+  background-repeat: no-repeat;
 }
 
 h1 {

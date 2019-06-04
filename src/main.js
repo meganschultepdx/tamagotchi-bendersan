@@ -4,10 +4,13 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 // import futurama from './futurama.png'
+import Futurama from './img/futurama.png';
 
+let futurama = document.getElementById('futurama');
+futurama.src = Futurama;
 
 $(document).ready(function() {
-  // let tamagotchi;
+  // let bendersan;
   $('form.title-form').submit(function(event) {
     event.preventDefault();
     let title = $('#title-input').val();
@@ -15,10 +18,13 @@ $(document).ready(function() {
     let bendersan = new Tamagotchi(title);
     $('.title-form').hide();
     $('#showAfter').show();
-    // $(".name-of-pet").text(title);
+    $("#yourBender").text(title);
     CurrentLevels(bendersan);
+    bendersan.setBordom();
+    bendersan.setSobriety();
+    bendersan.setHunger();
 
-//for buttons
+    //for buttons
     $('button#feed').click(function() {
       bendersan.feed();
       console.log(bendersan.foodLevel);
@@ -32,23 +38,17 @@ $(document).ready(function() {
       console.log(bendersan.alcoholLevel);
     });
 
-// for display current levelsDisplay
-function CurrentLevels(bendersan) {
-    setInterval(() => {
-      $("#foodLevel").text(bendersan.foodLevel);
-      $("#partyLevel").text(bendersan.partyLevel);
-      $("#alcoholLevel").text(bendersan.alcoholLevel);
-      // if (bendersan.killAllHumans() === " Dang, Bender-san's levels have dropped too low and he has KILLED ALL HUMANS!") {
-      //   $(".buttons").hide();
-      //   $(".tama").hide();
-      //   $("form.pet-name").show();
-      //   $(".dead").text(bendersan.title + bendersan.killAllHumans())
-      //   // delete bendersan;
-      //   console.log(bendersan.food);
-      // }
-    }, 1000);
-
-  }
+    // for display current levelsDisplay
+    function CurrentLevels(bendersan) {
+      setInterval(() => {
+        bendersan.killAllHumans();
+        bendersan.warnings();
+        $("#foodLevel1").text(bendersan.foodLevel);
+        $("#partyLevel1").text(bendersan.partyLevel);
+        $("#boozeLevel").text(bendersan.alcoholLevel);
+        console.log(bendersan.foodLevel);
+      }, 1000);
+    }
 
   });
 });

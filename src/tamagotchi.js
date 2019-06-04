@@ -30,12 +30,18 @@ export class Tamagotchi {
     if (this.foodLevel > 0 || this.partyLevel > 0 || this.alcoholLevel > 0) {
       return false;
     } else {
-      return true;
+      clearInterval(this.foodLevel, this.partyLevel, this.alcoholLevel);
+      // return "Bender-san has Killed All Humans!";
     }
   }
 
+  // clearInterval()
+  //   if (this.foodLevel === 0 || this.partyLevel === 0 || this.alcoholLevel === 0) {
+  //
+  //   }
+
   //warnings
-  Warnings() {
+  warnings() {
     if (this.foodLevel === 2) {
       alert(`Uh oh, Bender-san the ${this.title} is getting hungry!`)
     }

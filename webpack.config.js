@@ -32,16 +32,29 @@ module.exports = {
         ]
       },
       {
-       test: /\.(png|jpg|gif)$/i,
-       use: [
-         {
-           loader: 'url-loader',
-           options: {
-             limit: 8192
-           }
-         }
-       ]
-     },
+      test: /\.(png|svg|jpg|gif)$/,
+              use: [
+                {
+                  loader: 'file-loader',
+                  options: {
+                    name: '[path][name].[ext]',
+                  },
+
+                },
+              ],
+            },
+      
+    //   {
+    //    test: /\.(png|jpg|gif)$/i,
+    //    use: [
+    //      {
+    //        loader: 'url-loader',
+    //        options: {
+    //          limit: 8192
+    //        }
+    //      }
+    //    ]
+    //  },
       {
         test: /\.js$/,
         exclude: [
