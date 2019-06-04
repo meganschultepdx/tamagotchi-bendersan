@@ -1,8 +1,8 @@
-@font-face
+/* @font-face
 {
 font-family: fr-title.ttf;
 src: url('fr-title.ttf;');
-}
+} */
 
 body {
   background: #37383a;
@@ -17,11 +17,15 @@ h1 {
 }
 
 h3 {
-  color: #19334f;
+  color: white;
+}
+
+#addTitle {
+  color: #ad0516;
 }
 
 #levelTitle h3 {
-  color: red;
+  color: #3dbf98;
 }
 
 .title-form {
@@ -29,8 +33,8 @@ h3 {
 }
 
 #currentLevels {
-  border: 4px solid #89B6A5;
-  background: #89B6A5;
+  border: 4px solid #d6dbdb;
+  background: #d6dbdb;
   padding: 10px;
   margin-bottom: 20px;
 }

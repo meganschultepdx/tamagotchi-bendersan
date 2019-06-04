@@ -3,7 +3,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import futurama from './futurama.png'
+// import futurama from './futurama.png'
 
 
 $(document).ready(function() {
