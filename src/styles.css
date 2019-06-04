@@ -25,8 +25,9 @@ h3 {
   color: #ad0516;
 }
 
-#levelTitle h3 {
-  color: #3dbf98;
+#levelTitle {
+  color: #ad0516;
+  font-size: 24px;
 }
 
 .title-form {
@@ -38,6 +39,12 @@ h3 {
   background: #d6dbdb;
   padding: 10px;
   margin-bottom: 20px;
+  opacity: .8;
+}
+
+#action-form {
+  margin-top: 300px;
+  /* margin-left: 200px; */
 }
 
 .actionButton {
@@ -50,5 +57,5 @@ h3 {
 }
 
 .actionButton:hover {
-  background-color: red;
+  background-color: #ad0516;
 }

@@ -6,15 +6,14 @@ import './styles.css';
 // import futurama from './futurama.png'
 import Futurama from './img/futurama.png';
 
-let futurama = document.getElementById('futurama');
-futurama.src = Futurama;
+// let futurama = document.getElementById('futurama');
+// futurama.src = Futurama;
 
 $(document).ready(function() {
   // let bendersan;
   $('form.title-form').submit(function(event) {
     event.preventDefault();
     let title = $('#title-input').val();
-    // let yourBender = "Bender-san the " title;
     let bendersan = new Tamagotchi(title);
     $('.title-form').hide();
     $('#showAfter').show();
@@ -39,16 +38,22 @@ $(document).ready(function() {
     });
 
     // for display current levelsDisplay
-    function CurrentLevels(bendersan) {
+    function currentLevels(bendersan) {
       setInterval(() => {
         bendersan.killAllHumans();
-        bendersan.warnings();
+        let killAll = bendersan.killAllHumans();
+        $('#killAll').html(`${killAll}`)
+        // bendersan.warn ings();
         $("#foodLevel1").text(bendersan.foodLevel);
         $("#partyLevel1").text(bendersan.partyLevel);
         $("#boozeLevel").text(bendersan.alcoholLevel);
-        console.log(bendersan.foodLevel);
       }, 1000);
     }
+
+    function killAllMessage(bendersan) {
+      $('#showAfter').show();
+    }
+
 
   });
 });
