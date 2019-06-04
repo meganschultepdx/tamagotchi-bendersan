@@ -22,6 +22,7 @@ $(document).ready(function() {
     bendersan.setBordom();
     bendersan.setSobriety();
     bendersan.setHunger();
+    // bendersan.getBenderGif();
 
     //for buttons
     $('button#feed').click(function() {

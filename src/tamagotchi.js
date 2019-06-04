@@ -76,7 +76,7 @@ export class Tamagotchi {
     this.alcoholLevel = 10;
   }
 
-  // function getBenderGif() {
+  // getBenderGif() {
   //   $.ajax({
   //     url: `https://api.giphy.com/v1/gifs/mIZ9rPeMKefm0?api_key=fIOdIGuoL7N5Wdl7OjNN8Gq2UGTGmRdQ`,
   //     type: 'GET',
@@ -84,7 +84,8 @@ export class Tamagotchi {
   //       format: 'json'
   //     },
   //     success: function(response) {
-  //       $('#killImage').text(`Bender has Killed All Humans! ${response.getBenderGif}%`);
+  //       $('#gif').html("I don't really understand this part yet.");
+  //       $(".gif").show();
   //     },
   //     error: function() {
   //       $('#errors').text("There was an error processing your request. Please try again.");
