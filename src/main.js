@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('.title-form').hide();
     $('#showAfter').show();
     $("#yourBender").text(title);
-    CurrentLevels(bendersan);
+    currentLevels(bendersan);
     bendersan.setBordom();
     bendersan.setSobriety();
     bendersan.setHunger();
@@ -50,9 +50,10 @@ $(document).ready(function() {
       }, 1000);
     }
 
-    function killAllMessage(bendersan) {
-      $('#showAfter').show();
-    }
+    // function killAllMessage(bendersan) {
+    //   $('#showAfter').show();
+    // }
+
 
 
   });

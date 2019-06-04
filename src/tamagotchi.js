@@ -41,9 +41,9 @@ export class Tamagotchi {
   killAllHumans() {
      if (this.foodLevel === 0 || this.partyLevel === 0 || this.alcoholLevel === 0) {
       // clearInterval(this.foodLevel, this.partyLevel, this.alcoholLevel);
-      return "Bender-san has Killed All Humans!";
+      return "Bender has KILLED ALL HUMANS!!"
     } else {
-      return "Bender-san is happy";
+      return "";
     }
   }
 
@@ -75,4 +75,20 @@ export class Tamagotchi {
   giveAlcohol() {
     this.alcoholLevel = 10;
   }
+
+  // function getBenderGif() {
+  //   $.ajax({
+  //     url: `https://api.giphy.com/v1/gifs/mIZ9rPeMKefm0?api_key=fIOdIGuoL7N5Wdl7OjNN8Gq2UGTGmRdQ`,
+  //     type: 'GET',
+  //     data: {
+  //       format: 'json'
+  //     },
+  //     success: function(response) {
+  //       $('#killImage').text(`Bender has Killed All Humans! ${response.getBenderGif}%`);
+  //     },
+  //     error: function() {
+  //       $('#errors').text("There was an error processing your request. Please try again.");
+  //     }
+  //   });
+  // }
 }

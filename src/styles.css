@@ -13,7 +13,7 @@ body {
 h1 {
   color: #3dbf98;
   text-align: center;
-  font-size: 40px;
+  font-size: 55px;
   font-family: fr-title.ttf
 }
 
@@ -23,6 +23,7 @@ h3 {
 
 #addTitle {
   color: #ad0516;
+  font-size: 20px;
 }
 
 #levelTitle {
@@ -40,6 +41,25 @@ h3 {
   padding: 10px;
   margin-bottom: 20px;
   opacity: .8;
+  border-radius: 8px;
+}
+
+#killAll {
+  font-size: 200px;
+  color: #ad0516;
+  margin-top: -10px;
+  -webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
 }
 
 #action-form {
