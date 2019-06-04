@@ -1,10 +1,12 @@
+import $ from 'jquery';
+
 export class Tamagotchi {
 
   constructor(title) {
     this.title = title;
-    this.foodLevel = 10;
-    this.partyLevel = 10;
-    this.alcoholLevel = 10;
+    this.foodLevel = 1;
+    this.partyLevel = 1;
+    this.alcoholLevel = 1;
   }
 
 //intervals to set decrease of levels
@@ -40,6 +42,7 @@ export class Tamagotchi {
 
   killAllHumans() {
      if (this.foodLevel === 0 || this.partyLevel === 0 || this.alcoholLevel === 0) {
+      $('#showAfter').hide();
       // clearInterval(this.foodLevel, this.partyLevel, this.alcoholLevel);
       return "Bender has KILLED ALL HUMANS!!"
     } else {

@@ -42,6 +42,9 @@ $(document).ready(function() {
     function currentLevels(bendersan) {
       setInterval(() => {
         bendersan.killAllHumans();
+        // if (bendersan.killAllHumans === "Bender has KILLED ALL HUMANS!!") {
+        //   $('#showAfter').show();
+        // }
         let killAll = bendersan.killAllHumans();
         $('#killAll').html(`${killAll}`)
         // bendersan.warn ings();
